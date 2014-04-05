@@ -1,23 +1,15 @@
 package com.me.mygdxgame;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.DatagramPacket;
-import java.net.MulticastSocket;
 import m4ges.controllers.UITrick;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Point;
 import android.net.Uri;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
-import android.net.wifi.WifiManager.MulticastLock;
 import android.os.Handler;
-import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -73,6 +65,7 @@ public class AndroidHelp implements UITrick {
 	}
 
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public int[] getScreenSize() {
 		/* First, get the Display from the WindowManager */

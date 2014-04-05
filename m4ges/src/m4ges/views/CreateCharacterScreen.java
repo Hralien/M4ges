@@ -9,9 +9,9 @@ import m4ges.controllers.AbstractScreen;
 import m4ges.controllers.MyGame;
 import m4ges.models.Skill;
 import m4ges.models.classes.Aquamancien;
+import m4ges.models.classes.Chamane;
 import m4ges.models.classes.Necromancien;
 import m4ges.models.classes.Pyromancien;
-import m4ges.models.classes.Chamane;
 import m4ges.util.Constants;
 import m4ges.util.GamePreferences;
 
@@ -34,7 +34,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextField;
 import com.badlogic.gdx.scenes.scene2d.ui.TextField.TextFieldListener;
 import com.badlogic.gdx.scenes.scene2d.ui.Window;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
-import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.ChangeEvent;
 import com.badlogic.gdx.utils.Scaling;
 
 /**

@@ -8,26 +8,20 @@ import static com.badlogic.gdx.scenes.scene2d.actions.Actions.run;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.sequence;
 import static com.badlogic.gdx.scenes.scene2d.actions.Actions.touchable;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 import m4ges.controllers.AbstractScreen;
 import m4ges.controllers.MyGame;
 import m4ges.models.Effect;
 import m4ges.models.Sauvegarde;
-import m4ges.models.Vague;
 import m4ges.models.classes.Aquamancien;
 import m4ges.models.classes.Joueur;
 import m4ges.models.classes.Necromancien;
-import m4ges.models.monster.Monstre;
 import m4ges.util.AudioManager;
 import m4ges.util.Constants;
 import m4ges.util.GamePreferences;
-import reseau.UnicastClient;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
@@ -267,11 +261,11 @@ public class MenuPrincipalScreen extends AbstractScreen {
 						l.add(a);
 						Sauvegarde s = new Sauvegarde(l, 2);
 						s.sauvegarder();
-						ArrayList<String> saves = Sauvegarde.getAllSave();
-						for (String save : saves) {
+//						ArrayList<String> saves = Sauvegarde.getAllSave();
+//						for (String save : saves) {
 //							System.err.println(save);
-						}
-						Sauvegarde u = Sauvegarde.charger(saves.get(0));	
+//						}
+//						Sauvegarde u = Sauvegarde.charger(saves.get(0));	
 					}
 				}).start();
 			}
@@ -438,17 +432,17 @@ public class MenuPrincipalScreen extends AbstractScreen {
 	 * @param style
 	 * @return
 	 */
-	private TextButton buildBtnMenuTest(TextButtonStyle style) {
-		TextButton tbOption = new TextButton("Test", style);
-		tbOption.addListener(new ChangeListener() {
-			@Override
-			public void changed(ChangeEvent event, Actor actor) {
-				showMenuButtons(false);
-				showTestWindow(true, true);
-			}
-		});
-		return tbOption;
-	}
+//	private TextButton buildBtnMenuTest(TextButtonStyle style) {
+//		TextButton tbOption = new TextButton("Test", style);
+//		tbOption.addListener(new ChangeListener() {
+//			@Override
+//			public void changed(ChangeEvent event, Actor actor) {
+//				showMenuButtons(false);
+//				showTestWindow(true, true);
+//			}
+//		});
+//		return tbOption;
+//	}
 
 
 	/**

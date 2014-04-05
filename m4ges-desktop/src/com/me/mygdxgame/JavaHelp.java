@@ -5,9 +5,6 @@ import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-
 import m4ges.controllers.UITrick;
 
 import com.badlogic.gdx.Gdx;
