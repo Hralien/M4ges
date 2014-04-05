@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/tutoBatailleNavale"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/m4ges"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry exported="true" kind="lib" path="libs/gdx-backend-android.jar" sourcepath="libs/gdx-backend-android-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="/tutoBatailleNavale/libs/gdx.jar" sourcepath="/tutoBatailleNavale/libs/gdx-sources.jar"/>
-	<classpathentry exported="true" kind="lib" path="/tutoBatailleNavale/libs/tween-engine-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="/m4ges/libs/gdx.jar" sourcepath="/tutoBatailleNavale/libs/gdx-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="/m4ges/libs/tween-engine-api.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

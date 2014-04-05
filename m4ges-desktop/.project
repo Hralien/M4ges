@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tutoBatailleNavale-desktop</name>
+	<name>m4ges-desktop</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -18,7 +18,7 @@
 		<link>
 			<name>assets</name>
 			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/tutoBatailleNavale-android/assets</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/m4ges-android/assets</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
