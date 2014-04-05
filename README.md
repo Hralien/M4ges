@@ -1,3 +1,3 @@
 M4ges
 ===================
-Un projet réalisé par les étudiants de l'université Nancy Charlemagne 2013/2014
+Un projet rÃ©alisÃ© par 4 Ã©tudiants de l'universitÃ© Nancy Charlemagne 2013/2014
