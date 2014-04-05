@@ -1,0 +1,16 @@
+{
+class: m4ges.models.Vague,
+idVague: 3,
+nameVague:"MountainRoad",
+monsters: [
+    {
+        class: m4ges.models.monster.Blobjaune,
+    },
+    {
+        class: m4ges.models.monster.Lutin,
+    },
+    {
+        class: m4ges.models.monster.Bloborange,
+    }
+]
+}

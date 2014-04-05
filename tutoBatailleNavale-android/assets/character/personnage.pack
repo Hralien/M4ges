@@ -1,0 +1,96 @@
+
+personnage.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+abyss
+  rotate: false
+  xy: 1, 491
+  size: 1024, 512
+  orig: 1024, 512
+  offset: 0, 0
+  index: -1
+skeleton
+  rotate: false
+  xy: 1, 233
+  size: 512, 256
+  orig: 512, 256
+  offset: 0, 0
+  index: -1
+lutin
+  rotate: false
+  xy: 1027, 903
+  size: 512, 100
+  orig: 512, 100
+  offset: 0, 0
+  index: -1
+blobbleu
+  rotate: false
+  xy: 1, 131
+  size: 318, 100
+  orig: 318, 100
+  offset: 0, 0
+  index: -1
+blobjaune
+  rotate: false
+  xy: 515, 389
+  size: 318, 100
+  orig: 318, 100
+  offset: 0, 0
+  index: -1
+bloborange
+  rotate: false
+  xy: 1027, 801
+  size: 318, 100
+  orig: 318, 100
+  offset: 0, 0
+  index: -1
+blobrouge
+  rotate: false
+  xy: 1541, 903
+  size: 318, 100
+  orig: 318, 100
+  offset: 0, 0
+  index: -1
+aquamancien
+  rotate: false
+  xy: 1, 1
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+flower
+  rotate: false
+  xy: 515, 259
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+necromancien
+  rotate: false
+  xy: 1027, 671
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+pyromancien
+  rotate: false
+  xy: 1027, 541
+  size: 256, 128
+  orig: 256, 128
+  offset: 0, 0
+  index: -1
+phantom
+  rotate: false
+  xy: 1347, 801
+  size: 256, 100
+  orig: 256, 100
+  offset: 0, 0
+  index: -1
+shaman
+  rotate: false
+  xy: 1285, 735
+  size: 256, 64
+  orig: 256, 64
+  offset: 0, 0
+  index: -1

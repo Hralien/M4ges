@@ -1,0 +1,16 @@
+{
+class: m4ges.models.Vague,
+idVague: 2,
+nameVague:"EnterForest",
+monsters: [
+    {
+        class: m4ges.models.monster.Blobbleu,
+    },
+    {
+        class: m4ges.models.monster.Blobjaune,
+    },
+    {
+        class: m4ges.models.monster.Blobrouge,
+    }
+]
+}

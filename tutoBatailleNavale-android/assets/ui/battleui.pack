@@ -1,0 +1,70 @@
+
+battleui.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+battle_ui_spell
+  rotate: false
+  xy: 1, 143
+  size: 299, 96
+  orig: 299, 96
+  offset: 0, 0
+  index: -1
+battle_ui2
+  rotate: false
+  xy: 1, 44
+  size: 261, 97
+  orig: 261, 97
+  offset: 0, 0
+  index: -1
+battle_ui
+  rotate: false
+  xy: 302, 143
+  size: 261, 96
+  orig: 261, 96
+  offset: 0, 0
+  index: -1
+hp_bar
+  rotate: false
+  xy: 264, 1
+  size: 201, 140
+  orig: 201, 140
+  offset: 0, 0
+  index: -1
+sp_bar
+  rotate: false
+  xy: 565, 99
+  size: 201, 140
+  orig: 201, 140
+  offset: 0, 0
+  index: -1
+btn_blue
+  rotate: false
+  xy: 1, 9
+  size: 107, 33
+  split: 7, 8, 8, 6
+  orig: 107, 33
+  offset: 0, 0
+  index: -1
+btn_placeholder
+  rotate: false
+  xy: 768, 169
+  size: 70, 70
+  split: 9, 9, 9, 9
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+pseudo_placeholder
+  rotate: false
+  xy: 467, 121
+  size: 84, 20
+  orig: 84, 20
+  offset: 0, 0
+  index: -1
+fleche
+  rotate: false
+  xy: 110, 10
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,16 @@
+{
+class: m4ges.models.Vague,
+idVague: 5,
+nameVague:"TempleAbyss",
+monsters: [
+    {
+        class: m4ges.models.monster.Phantom,
+    },
+    {
+        class: m4ges.models.monster.Abyss,
+    },
+    {
+        class: m4ges.models.monster.Skeleton,
+    }
+]
+}

@@ -1,0 +1,75 @@
+
+maps.jpg
+format: RGB888
+filter: Nearest,Nearest
+repeat: none
+Cave
+  rotate: false
+  xy: 1, 1461
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+EnterForest
+  rotate: false
+  xy: 1, 1096
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+FinalAbyss
+  rotate: false
+  xy: 643, 1461
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+Forest
+  rotate: false
+  xy: 1, 731
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+Mine
+  rotate: false
+  xy: 643, 1096
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+MountainRoad
+  rotate: false
+  xy: 1285, 1461
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+ShroomCave
+  rotate: false
+  xy: 1, 366
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+Swamp
+  rotate: false
+  xy: 643, 731
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+TempleAbyss
+  rotate: false
+  xy: 1285, 1096
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1
+Volcano
+  rotate: false
+  xy: 1, 1
+  size: 640, 363
+  orig: 640, 363
+  offset: 0, 0
+  index: -1

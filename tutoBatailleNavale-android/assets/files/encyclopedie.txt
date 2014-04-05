@@ -1,0 +1,32 @@
+{
+class: m4ges.models.Encyclopedie,
+monsters: [
+    {
+        class: m4ges.models.monster.Abyss,
+    },
+    {
+        class: m4ges.models.monster.Blobbleu,
+    },
+    {
+        class: m4ges.models.monster.Blobjaune,
+    },
+    {
+        class: m4ges.models.monster.Bloborange,
+    },
+    {
+        class: m4ges.models.monster.Blobrouge,
+    },
+    {
+        class: m4ges.models.monster.Flower,
+    },
+    {
+        class: m4ges.models.monster.Lutin,
+    },
+    {
+        class: m4ges.models.monster.Phantom,
+    },
+    {
+        class: m4ges.models.monster.Skeleton,
+    }
+]
+}

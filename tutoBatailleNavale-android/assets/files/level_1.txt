@@ -1,0 +1,15 @@
+{
+class: m4ges.models.Vague,
+idVague: 1,
+nameVague: "Forest",
+monsters: [
+    {
+        class: m4ges.models.monster.Flower,
+        mana:2
+    },
+    {
+        class: m4ges.models.monster.Lutin,
+        intel:3
+    }
+]
+}

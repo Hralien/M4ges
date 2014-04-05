@@ -1,0 +1,191 @@
+
+skill.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Foudre
+  rotate: false
+  xy: 1, 107
+  size: 960, 1920
+  orig: 960, 1920
+  offset: 0, 0
+  index: -1
+Combustion
+  rotate: false
+  xy: 963, 491
+  size: 960, 1536
+  orig: 960, 1536
+  offset: 0, 0
+  index: -1
+Slash
+  rotate: false
+  xy: 963, 105
+  size: 960, 384
+  orig: 960, 384
+  offset: 0, 0
+  index: -1
+ef_Combustion
+  rotate: false
+  xy: 1, 54
+  size: 614, 51
+  orig: 614, 51
+  offset: 0, 0
+  index: -1
+ef_Empoisonnement
+  rotate: false
+  xy: 1, 1
+  size: 614, 51
+  orig: 614, 51
+  offset: 0, 0
+  index: -1
+ef_Gel
+  rotate: false
+  xy: 617, 52
+  size: 614, 51
+  orig: 614, 51
+  offset: 0, 0
+  index: -1
+ef_Malediction
+  rotate: false
+  xy: 1233, 52
+  size: 614, 51
+  orig: 614, 51
+  offset: 0, 0
+  index: -1
+
+skill2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Motivation
+  rotate: false
+  xy: 1, 676
+  size: 960, 1344
+  orig: 960, 1344
+  offset: 0, 0
+  index: -1
+Resurrection
+  rotate: false
+  xy: 963, 676
+  size: 960, 1344
+  orig: 960, 1344
+  offset: 0, 0
+  index: -1
+Dragon_Breath
+  rotate: false
+  xy: 1, 1
+  size: 870, 673
+  orig: 870, 673
+  offset: 0, 0
+  index: -1
+Earth_Spike
+  rotate: false
+  xy: 873, 367
+  size: 768, 307
+  orig: 768, 307
+  offset: 0, 0
+  index: -1
+
+skill3.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Abimes
+  rotate: false
+  xy: 1, 771
+  size: 960, 1152
+  orig: 960, 1152
+  offset: 0, 0
+  index: -1
+Gel
+  rotate: false
+  xy: 963, 771
+  size: 960, 1152
+  orig: 960, 1152
+  offset: 0, 0
+  index: -1
+Choc_sismique
+  rotate: false
+  xy: 1, 1
+  size: 960, 768
+  orig: 960, 768
+  offset: 0, 0
+  index: -1
+Deflagration
+  rotate: false
+  xy: 963, 1
+  size: 960, 768
+  orig: 960, 768
+  offset: 0, 0
+  index: -1
+
+skill4.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Geyser
+  rotate: false
+  xy: 1, 771
+  size: 960, 1152
+  orig: 960, 1152
+  offset: 0, 0
+  index: -1
+Malediction
+  rotate: false
+  xy: 963, 771
+  size: 960, 1152
+  orig: 960, 1152
+  offset: 0, 0
+  index: -1
+Resistance
+  rotate: false
+  xy: 1, 1
+  size: 960, 768
+  orig: 960, 768
+  offset: 0, 0
+  index: -1
+Soin
+  rotate: false
+  xy: 963, 1
+  size: 960, 768
+  orig: 960, 768
+  offset: 0, 0
+  index: -1
+
+skill5.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Tornade
+  rotate: false
+  xy: 1, 771
+  size: 960, 1152
+  orig: 960, 1152
+  offset: 0, 0
+  index: -1
+Empoisonnement
+  rotate: false
+  xy: 963, 963
+  size: 960, 960
+  orig: 960, 960
+  offset: 0, 0
+  index: -1
+Perturbation
+  rotate: false
+  xy: 963, 1
+  size: 960, 960
+  orig: 960, 960
+  offset: 0, 0
+  index: -1
+
+skill6.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Rafale
+  rotate: false
+  xy: 1, 1
+  size: 960, 960
+  orig: 960, 960
+  offset: 0, 0
+  index: -1
