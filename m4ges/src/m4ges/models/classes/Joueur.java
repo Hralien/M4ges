@@ -17,6 +17,7 @@ public abstract class Joueur extends Personnage implements Serializable {
 	private boolean aJoueCeTour;
 	private ArrayList<Item> inventaire;
 	private String macAddress;
+	private int id;
 
 	public Joueur() {
 		super();
@@ -112,5 +113,11 @@ public abstract class Joueur extends Personnage implements Serializable {
 	public void setaJoueCeTour(boolean aJoueCeTour) {
 		this.aJoueCeTour = aJoueCeTour;
 	}
+	public int getId() {
+		return id;
+	}
 
+	public void setId(int id) {
+		this.id = id;
+	}
 }
