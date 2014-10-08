@@ -18,8 +18,11 @@ import java.util.Enumeration;
 
 import m4ges.controllers.MyGame;
 import m4ges.models.MapPerso;
+import m4ges.models.Personnage;
+import m4ges.models.Skill;
 import m4ges.models.classes.Joueur;
 import m4ges.models.monster.Monstre;
+import m4ges.util.Constants;
 import m4ges.views.ChatWindow;
 
 public class TCPClient {
@@ -90,12 +93,41 @@ public class TCPClient {
 	}
 	
 	/**
+	 * @TODO 
+	 */
+	public void deco(){
+		
+	}
+	
+	public void lancerSort(Personnage p, Skill s) {
+		
+	}
+	
+	public void estPret(){
+		
+	}
+	
+	
+	public void envoieMessage(String m) throws IOException {
+		sendToAll(m);
+	}
+	
+	/**
 	 * @TODO la méthode
 	 * @param o : objet recu
 	 */
 	private void dealWithObject(Object o, String ip) {
 		//Player who sent the object (USELESS ?)
 		Joueur j = getPlayerByIP(ip);
+		
+		if (o instanceof String) {
+			messageRecu((String)o, j.getName());
+		}
+		
+	}
+	
+	private void messageRecu(String m, String pseudo) {
+		this.chatWindow.addMessage(pseudo + " : " + m);
 	}
 	
 	private void receiveData(Socket s) throws IOException {
@@ -249,4 +281,14 @@ public class TCPClient {
 		}
 		return "";
 	}
+	
+	public ArrayList<Monstre> getMonstres() {
+		return monstres;
+	}
+
+	public void setMonstres(ArrayList<Monstre> monstres) {
+		System.out.println(monstres.size());
+		this.monstres = monstres;
+	}
+	
 }
