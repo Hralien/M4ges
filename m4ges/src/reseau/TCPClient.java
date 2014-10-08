@@ -82,18 +82,14 @@ public class TCPClient {
 		this.game = g;
 		joueurs = new MapPerso<Socket, Joueur>();
 		monstres = new ArrayList<Monstre>();
-		game.playersConnected.add(game.player);
-		
+		game.playersConnected.add(game.player);		
 		try {
 			lancerServeur(PORT);
-			monSocket = new Socket(TCPClient.getLocalIpAddress(), PORT);
-			joueurs.put(monSocket, game.player);
+			receiveBroadcast();
 			sendBroadcast();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		receiveBroadcast();
 
 	}
 	
@@ -179,7 +175,7 @@ public class TCPClient {
 		}).start();
 	}
 	
-	private Socket connection(String ip, int port) throws UnknownHostException, IOException{
+	private Socket connection(InetAddress ip, int port) throws UnknownHostException, IOException{
 		System.out.println(ip);
 		Socket s= new Socket(ip, port);
 		System.out.println("Connection ok");
@@ -235,7 +231,7 @@ public class TCPClient {
 							}
 						}
 						if (!exist) {
-							Socket s = connection(ip.replace('/', '\0'), PORT);
+							Socket s = connection(dp.getAddress(), PORT);
 //							sendPlayer(s);
 						}
 					} catch (IOException e) {
