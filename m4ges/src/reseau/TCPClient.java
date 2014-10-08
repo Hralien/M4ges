@@ -77,17 +77,22 @@ public class TCPClient {
 	 *            : Le jeu
 	 * @throws IOException 
 	 */
-	public TCPClient(MyGame g) throws IOException {
+	public TCPClient(MyGame g){
 		// initialisation
 		this.game = g;
 		joueurs = new MapPerso<Socket, Joueur>();
 		monstres = new ArrayList<Monstre>();
 		game.playersConnected.add(game.player);
 		
-		lancerServeur(PORT);
-		monSocket = new Socket(TCPClient.getLocalIpAddress(), PORT);
-		joueurs.put(monSocket, game.player);
-		sendBroadcast();
+		try {
+			lancerServeur(PORT);
+			monSocket = new Socket(TCPClient.getLocalIpAddress(), PORT);
+			joueurs.put(monSocket, game.player);
+			sendBroadcast();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 		receiveBroadcast();
 
 	}
