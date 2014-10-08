@@ -145,6 +145,7 @@ public class TCPClient {
 					try {
 						ObjectInputStream ois = new ObjectInputStream(s.getInputStream());
 						Object o = ois.readObject();
+						System.out.println("objet recu");
 						dealWithObject(o, ip);
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -166,6 +167,7 @@ public class TCPClient {
 				while (true) {
 					try {
 						Socket s = serverSocket.accept();
+						System.out.println("Connexion au serveur");
 						receiveData(s);
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -177,7 +179,9 @@ public class TCPClient {
 	}
 	
 	private Socket connection(String ip, int port) throws UnknownHostException, IOException{
+		System.out.println(ip);
 		Socket s= new Socket(ip, port);
+		System.out.println("Connection ok");
 		return s;
 	}
 	
@@ -230,8 +234,8 @@ public class TCPClient {
 							}
 						}
 						if (!exist) {
-							Socket s = connection(dp.getAddress().toString(), PORT);
-							sendPlayer(s);
+							Socket s = connection(ip, PORT);
+//							sendPlayer(s);
 						}
 					} catch (IOException e) {
 						e.printStackTrace();
@@ -242,9 +246,9 @@ public class TCPClient {
 		}).start();
 	}
 	
-	private void sendPlayer(Socket s) throws IOException {
-		sendTo(s, game.player);
-	}
+//	private void sendPlayer(Socket s) throws IOException {
+//		sendTo(s, game.player);
+//	}
 	
 	private void sendTo(Socket s, Object o) throws IOException {
 		ObjectOutputStream os = new ObjectOutputStream(s.getOutputStream());
