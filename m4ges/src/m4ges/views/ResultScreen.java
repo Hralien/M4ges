@@ -88,11 +88,7 @@ public class ResultScreen extends AbstractScreen {
 		TextButton validation = new TextButton("Continuer", skin);
 		validation.addListener(new ChangeListener() {
 			public void changed(ChangeEvent event, Actor actor) {
-				try {
-					game.getMC().estPret();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+				game.getMC().estPret();
 			}
 		});
 		// recuperation des dimensions de l'ecran

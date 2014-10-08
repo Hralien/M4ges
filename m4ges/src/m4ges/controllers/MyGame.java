@@ -15,6 +15,7 @@ import m4ges.views.FinalScreen;
 import m4ges.views.LoadingScreen;
 import m4ges.views.MenuPrincipalScreen;
 import m4ges.views.ResultScreen;
+import reseau.TCPClient;
 import reseau.UnicastClient;
 
 import com.badlogic.gdx.Game;
@@ -54,7 +55,7 @@ public class MyGame extends Game{
 
 	public ArrayList<String> listHost ;
 	public ArrayList<Personnage> playersConnected;
-	public UnicastClient mc;
+	public TCPClient mc;
 
 	public int currentVagueIndex;
 
@@ -101,11 +102,7 @@ public class MyGame extends Game{
 
 	@Override
 	public void dispose(){
-		try {
-			this.mc.deco();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		this.mc.deco();
 		GamePreferences.instance.load();
 		GamePreferences prefs = GamePreferences.instance;
 		prefs.timePlayed += TimeUtils.millis() - AbstractScreen.getTimePlayed();
@@ -114,11 +111,11 @@ public class MyGame extends Game{
 
 	}
 
-	public void setMC(UnicastClient m){
+	public void setMC(TCPClient m){
 		this.mc = m;
 	}
 
-	public UnicastClient getMC(){
+	public TCPClient getMC(){
 		return this.mc;
 	}
 

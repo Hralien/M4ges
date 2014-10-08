@@ -223,13 +223,9 @@ public class BattleScreen extends AbstractScreen {
 							stage.getActors().removeValue(it, true);
 					}
 					if (selected != null) {
-						try {
-							game.mc.lancerSort(selected, it);
-							stage.getActors().removeValue(selectWindow, true);
-							stage.addActor(createSelectedWindows());
-						} catch (IOException e) {
-							e.printStackTrace();
-						}
+						game.mc.lancerSort(selected, it);
+						stage.getActors().removeValue(selectWindow, true);
+						stage.addActor(createSelectedWindows());
 					} else {
 						lb_info.setText("Selectionner un monstre et lancer un sort");
 					}

@@ -10,6 +10,7 @@ import java.io.IOException;
 import m4ges.controllers.AbstractScreen;
 import m4ges.controllers.MyGame;
 import m4ges.util.Constants;
+import reseau.TCPClient;
 import reseau.UnicastClient;
 
 import com.badlogic.gdx.Gdx;
@@ -105,15 +106,16 @@ public class ChatScreen extends AbstractScreen {
 		validation.addListener(new ChangeListener() {
 			public void changed(ChangeEvent event, Actor actor) {
 				ChatWindow cw = new ChatWindow(game);
-				final UnicastClient uc = new UnicastClient(game);
+				final TCPClient uc = new TCPClient(game);
 				uc.chatWindow = cw;
-		
+				
 				game.setMC(uc);
-				try {
-					uc.lancerClient();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
+
+//				try {
+//					uc.lancerClient();
+//				} catch (IOException e) {
+//					e.printStackTrace();
+//				}
 				window.removeActor(validation);
 				window.add(pret);
 				window.row();
@@ -126,11 +128,7 @@ public class ChatScreen extends AbstractScreen {
 					@Override
 					public void changed(ChangeEvent event, Actor actor) {
 						pret.setColor(Color.GREEN);
-						try {
-							uc.estPret();
-						} catch (IOException e) {
-							e.printStackTrace();
-						}
+						uc.estPret();
 					}
 				});
 				
