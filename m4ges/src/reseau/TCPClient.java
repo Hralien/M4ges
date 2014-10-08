@@ -167,6 +167,7 @@ public class TCPClient {
 				while (true) {
 					try {
 						Socket s = serverSocket.accept();
+						joueurs.put(s, null);
 						System.out.println("Connexion au serveur");
 						receiveData(s);
 					} catch (IOException e) {
@@ -225,7 +226,7 @@ public class TCPClient {
 						ds.receive(dp);
 						System.out.println("Broadcast recu");
 						data = dp.getData();
-						String ip = dp.getAddress().toString().replace('/', '\0');
+						String ip = dp.getAddress().toString();
 						boolean exist = false;
 						for(Socket s:joueurs.keySet()){
 							if (s.getInetAddress().toString().equals(ip)){
@@ -234,7 +235,7 @@ public class TCPClient {
 							}
 						}
 						if (!exist) {
-							Socket s = connection(ip, PORT);
+							Socket s = connection(ip.replace('/', '\0'), PORT);
 //							sendPlayer(s);
 						}
 					} catch (IOException e) {
@@ -257,6 +258,7 @@ public class TCPClient {
 	
 	private void sendToAll(Object o) throws IOException {
 		for (Socket s:joueurs.keySet()) {
+			System.out.println(s.getInetAddress().toString());
 			ObjectOutputStream os = new ObjectOutputStream(s.getOutputStream());
 			os.writeObject(o);
 		}
