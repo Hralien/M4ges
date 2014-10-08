@@ -221,7 +221,7 @@ public class TCPClient {
 						ds.receive(dp);
 						System.out.println("Broadcast recu");
 						data = dp.getData();
-						String ip = dp.getAddress().toString();
+						String ip = dp.getAddress().toString().replace('/', '\0');
 						boolean exist = false;
 						for(Socket s:joueurs.keySet()){
 							if (s.getInetAddress().toString().equals(ip)){
