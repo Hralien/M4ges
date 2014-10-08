@@ -53,18 +53,7 @@ public class NetworkActions {
 	public class TokenTour{
 		
 	}
-	public class Message{
-		String playerName;
-		String message;
-		
-		public Message(String playerName, String message) {
-			super();
-			this.playerName = playerName;
-			this.message = message;
-		}
-		
-		
-	}
+
 	public class Pret{
 		
 	}
