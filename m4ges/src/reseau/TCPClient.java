@@ -157,14 +157,7 @@ public class TCPClient {
 		}).start();
 	}
 	
-	private void sendBroadcast() throws IOException{
-		DatagramSocket ds = new DatagramSocket(32144);
-		String s = "Nouveau joueur";
-		DatagramPacket dp = new DatagramPacket(s.getBytes(), s.length(), InetAddress.getByName("255.255.255.255"), 32144);
-		ds.send(dp);
-		ds.close();
-	}
-	
+
 	private void lancerServeur(int port) throws IOException{
 		serverSocket = new ServerSocket(port);
 		new Thread(new Runnable() {
@@ -186,6 +179,19 @@ public class TCPClient {
 	private Socket connection(String ip, int port) throws UnknownHostException, IOException{
 		Socket s= new Socket(ip, port);
 		return s;
+	}
+	
+	private void sendBroadcast() throws IOException{
+		DatagramSocket ds = new DatagramSocket();
+		String s = "Nouveau joueur";
+		DatagramPacket dp = new DatagramPacket(s.getBytes(), s.length(), InetAddress.getByName("255.255.255.255"), 32144);
+		ds.send(dp);
+		String[] broadcastTab = TCPClient.getLocalIpAddress().split("\\.");
+		String broadcast = broadcastTab[0] + "." + broadcastTab[1] + "."
+				+ broadcastTab[2] + ".255";
+		dp = new DatagramPacket(s.getBytes(), s.length(),
+				InetAddress.getByName(broadcast), 32144);
+		ds.close();
 	}
 	
 	/**
@@ -213,6 +219,7 @@ public class TCPClient {
 					try {
 						// recepetion
 						ds.receive(dp);
+						System.out.println("Broadcast recu");
 						data = dp.getData();
 						String ip = dp.getAddress().toString();
 						boolean exist = false;
