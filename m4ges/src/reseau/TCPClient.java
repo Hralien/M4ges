@@ -135,14 +135,15 @@ public class TCPClient {
 		this.chatWindow.addMessage(pseudo + " : " + m);
 	}
 	
-	private void receiveData(Socket s) throws IOException {
+	private void receiveData(final Socket s) throws IOException {
 		final String ip = s.getInetAddress().toString();
-		final ObjectInputStream ois = new ObjectInputStream(s.getInputStream());
+		
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				while (true) {
 					try {
+						ObjectInputStream ois = new ObjectInputStream(s.getInputStream());
 						Object o = ois.readObject();
 						dealWithObject(o, ip);
 					} catch (IOException e) {
