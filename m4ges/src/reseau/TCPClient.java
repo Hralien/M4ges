@@ -232,7 +232,6 @@ public class TCPClient {
 			}
 
 		}).start();
-		ds.close();
 	}
 	
 	private void sendPlayer(Socket s) throws IOException {
